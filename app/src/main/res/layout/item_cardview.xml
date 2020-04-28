@@ -18,12 +18,13 @@
         android:padding="8dp">
 
         <ImageView
-        android:id="@+id/img_item_photo"
-        android:layout_width="150dp"
-        android:layout_height="220dp"
-        android:layout_marginBottom="4dp"
-        android:scaleType="centerCrop"
-        tools:src="@color/colorAccent" />
+            android:id="@+id/img_item_photo"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            tools:src="@color/colorAccent"
+            android:contentDescription="@string/todo" />
 
         <ImageView
             android:id="@+id/logo"
@@ -31,6 +32,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="230dp"
             android:layout_marginBottom="4dp"
+            android:contentDescription="@string/todo"
             android:src="@drawable/jago" />
 
         <TextView
@@ -42,10 +44,9 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
             android:layout_toEndOf="@id/img_item_photo"
-
             android:textSize="16sp"
             android:textStyle="bold"
-            tools:text="Avatar name" />
+            tools:text="@string/avatar_name" />
         <TextView
             android:id="@+id/tv_item_detail"
             android:layout_width="match_parent"
@@ -55,10 +56,9 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_toEndOf="@id/img_item_photo"
-
             android:ellipsize="end"
             android:maxLines="5"
-            tools:text="Detail" />
+            tools:text="@string/detail" />
         <LinearLayout
             android:id="@+id/layout_button"
             android:layout_width="match_parent"
@@ -66,7 +66,6 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="16dp"
             android:layout_toEndOf="@id/img_item_photo"
-
             android:orientation="vertical">
             <Button
                 android:id="@+id/btn_set_rencana"
@@ -74,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Tambah_rencana"
+                android:text="@string/tambah_rencana"
                 android:textSize="12sp" />
             <Button
                 android:id="@+id/btn_set_suka"
@@ -82,7 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="suka"
+                android:text="@string/suka"
                 android:textSize="12sp" />
             <Button
                 android:id="@+id/btn_set_share"
@@ -90,7 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="share"
+                android:text="@string/share"
                 android:textSize="12sp" />
 
         </LinearLayout>
